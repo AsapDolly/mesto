@@ -1,0 +1,17 @@
+.elements {
+
+}
+
+@media screen and (max-width: 768px){
+
+	.elements{
+		
+	}
+}
+
+@media screen and (max-width: 425px){
+
+	.elements{
+		
+	}
+}

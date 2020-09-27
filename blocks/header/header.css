@@ -1,0 +1,17 @@
+.header {
+
+}
+
+@media screen and (max-width: 768px){
+
+	.header{
+		
+	}
+}
+
+@media screen and (max-width: 425px){
+
+	.header{
+		
+	}
+}
