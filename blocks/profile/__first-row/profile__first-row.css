@@ -3,13 +3,3 @@
     flex-direction: row;
     align-items:  center;
 }
-
-@media screen and (max-width: 768px) {
-
-    .profile__first-row {}
-}
-
-@media screen and (max-width: 425px) {
-
-    .profile__first-row {}
-}

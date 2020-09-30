@@ -2,11 +2,5 @@
     background: #FFFFFF;
     border-radius: 10px;
     padding-bottom: 31px;
-    width: 282px;
-    
-}
-
-@media screen and (max-width: 320px) {
-
-    .element {}
+    width: 282px;    
 }

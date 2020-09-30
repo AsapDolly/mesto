@@ -10,8 +10,3 @@
     overflow: hidden;
     margin:0;
 }
-
-@media screen and (max-width: 320px) {
-
-    .element__caption {}
-}
