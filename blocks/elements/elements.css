@@ -1,17 +1,19 @@
 .elements {
-
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 282px);
+    grid-column-gap: 18px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    max-width: 882px;
+    width: calc(100% - 199px * 2);
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 320px){
 
 	.elements{
-		
-	}
-}
-
-@media screen and (max-width: 425px){
-
-	.elements{
-		
+		width: calc(100% - 19px * 2);	
 	}
 }

@@ -1,17 +1,12 @@
 .header {
-
+    width: calc(100% - 199px*2);
+    margin: 0 auto;
+    max-width: 882px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 740px) {
 
-	.header{
-		
-	}
-}
-
-@media screen and (max-width: 425px){
-
-	.header{
-		
-	}
+    .header {
+    	width:100%;
+    }
 }

@@ -1,0 +1,13 @@
+.element__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 25px 15px 0 21px;
+}
+
+@media screen and (max-width: 320px) {
+
+    .element__row {}
+}
