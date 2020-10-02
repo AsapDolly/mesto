@@ -21,3 +21,12 @@
     	font-size: 27px;
     }
 }
+
+@media screen and (max-width: 320px) {
+
+    .profile__username {
+        width: 201px;
+        font-size: 27px;
+        max-width: 200px;
+    }
+}
