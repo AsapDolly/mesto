@@ -1,7 +1,11 @@
 .popup__close {
-    position: absolute;
-    right: -35px;
-    top: -35px;
+    position: relative;
+    top: -195px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer; 
+    padding: 0;
 }
 
 .popup__close:hover {

@@ -1,3 +1,13 @@
 .element__like {
-    height: 18.13px;
+    height: 18.13px;  
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer; 
+    padding: 0;
+}
+
+.element__like:hover {
+	opacity: 0.6;
+	transition: opacity 0.5s;
 }
