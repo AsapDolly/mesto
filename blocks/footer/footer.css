@@ -1,7 +1,9 @@
 .footer {
-    margin: 66px auto 0 auto;
+    margin: 66px auto 60px auto;
     max-width: 882px;
     width: calc(100% - 199px * 2);
+    background-color: #000000;
+    flex-shrink: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -15,6 +17,7 @@
 
     .footer {
         margin-top: 48px;
+        margin-bottom: 36px;
         width: calc(100% - 19px * 2);
     }
 }

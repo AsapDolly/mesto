@@ -9,15 +9,8 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
-    padding-top: 45px;
-    padding-bottom: 60px;
 
-}
-
-@media screen and (max-width: 320px) {
-
-    .page {
-        padding-top: 28px;
-        padding-bottom: 36px;
-    }
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }

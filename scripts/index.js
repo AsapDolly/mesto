@@ -13,15 +13,15 @@ function openPopup() {
     popup.classList.add('popup_opened');
 }
 
+function closePopup() {
+    popup.classList.remove('popup_opened');
+}
+
 function formSubmitHandler(evt) {
     evt.preventDefault();
     userName.textContent = popupUserName.value;
     description.textContent = popupDescription.value;
     closePopup();
-}
-
-function closePopup() {
-    popup.classList.remove('popup_opened');
 }
 
 editButton.addEventListener('click', openPopup);
