@@ -8,7 +8,6 @@
     grid-row-gap: 20px;
     justify-content: center;
     max-width: 882px;
-    width: calc(100% - 199px * 2);
 }
 
 @media screen and (max-width: 320px){
