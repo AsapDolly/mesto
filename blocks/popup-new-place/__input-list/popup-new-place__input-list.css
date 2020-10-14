@@ -1,0 +1,16 @@
+.popup-new-place__input-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 54px auto 0 auto;
+    width: calc(100% - 36px*2);
+}
+
+@media screen and (max-width: 540px) {
+
+    .popup-new-place__input-list {
+    	margin-top: 36px;
+    	width: calc(100% - 22px*2);
+        gap: 20px;
+    }
+}

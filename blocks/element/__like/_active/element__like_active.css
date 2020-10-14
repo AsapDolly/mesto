@@ -1,0 +1,4 @@
+.element__like_active {
+    background: url(../../../../images/like-filled.svg) center no-repeat;
+    background-size: 100%;
+}

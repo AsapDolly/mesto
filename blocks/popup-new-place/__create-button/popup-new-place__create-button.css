@@ -1,0 +1,33 @@
+.popup-new-place__create-button {
+    margin: 48px auto 0 auto;
+    padding: 0;
+    height: 50px;
+    width: calc(100% - 36px*2);
+    background: #000000;
+    border-radius: 2px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    border:0;
+}
+
+.popup-new-place__create-button:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+
+@media screen and (max-width: 540px) {
+
+    .popup-new-place__create-button {
+        font-size: 14px;
+        line-height: 17px;
+        width: calc(100% - 20px*2);
+        height: 40px;
+        margin-top: 36px;
+    }
+}

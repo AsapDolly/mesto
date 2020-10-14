@@ -1,4 +1,4 @@
-.popup__close {
+.popup-new-place__close {
     display: flex;
     justify-content: flex-end;
     position: absolute;
@@ -13,16 +13,16 @@
     padding: 0;
 }
 
-.popup__close:hover {
-	opacity: 0.6;
-	transition: opacity 0.5s;
+.popup-new-place__close:hover {
+    opacity: 0.6;
+    transition: opacity 0.5s;
 }
 
 @media screen and (max-width: 540px) {
 
-    .popup__close {
-        right: 5px;
-        top: -50px;
+    .popup-new-place__close {
+        right: -33px;
+        top: -33px;
         background-size: 30px 30px;
         width: 30px;
         height: 30px;

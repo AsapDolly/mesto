@@ -1,9 +1,9 @@
 .element__like {
-    height: 18.13px;  
-    background-color: Transparent;
-    background-repeat: no-repeat;
+    height: 19px;
+    width: 21px;
     border: none;
-    cursor: pointer; 
+    background: url(../../../images/like.svg) center no-repeat;
+    cursor: pointer;
     padding: 0;
 }
 

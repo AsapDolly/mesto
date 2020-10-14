@@ -1,4 +1,4 @@
-.popup__form {
+.popup-new-place__form {
     width: 430px;
     background: #fff;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
@@ -11,8 +11,8 @@
 
 @media screen and (max-width: 540px) {
 
-    .popup__form {
-        width: 282px;
-        padding-bottom: 25px;
+    .popup-new-place__form {
+        width: 240px;
+        padding-bottom: 30px;
     }
 }

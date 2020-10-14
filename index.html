@@ -3,91 +3,90 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pages/index.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="pages/index.css" rel="stylesheet">
     <title>Mesto</title>
 </head>
 
 <body>
-    <div class="popup">
-        <form class="popup__form" name="edit-form">
-            <h2 class="popup__title">Редактировать профиль</h2>
-            <div class="popup__input-list">
-                <input type="text" class="popup__input-text popup__input-text_type_username" name="username">
-                <input type="text" class="popup__input-text popup__input-text_type_description" name="description">
+<div class="popup">
+    <form class="popup__form" name="edit-form">
+        <button class="popup__close" type="button"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <div class="popup__input-list">
+            <input class="popup__input-text popup__input-text_type_username" name="username" type="text">
+            <input class="popup__input-text popup__input-text_type_description" name="description" type="text">
+        </div>
+        <button class="popup__save-button" type="submit">Сохранить</button>
+    </form>
+</div>
+
+<div class="popup-new-place">
+    <form class="popup-new-place__form" name="edit-form">
+        <button class="popup-new-place__close" type="button"></button>
+        <h2 class="popup-new-place__title">Новое место</h2>
+        <div class="popup-new-place__input-list">
+            <input class="popup-new-place__input-text popup-new-place__input-text_type_name" name="name"
+                   placeholder="Название"
+                   type="text">
+            <input class="popup-new-place__input-text popup-new-place__input-text_type_link" name="link"
+                   placeholder="Ссылка на картинку"
+                   type="text">
+        </div>
+        <button class="popup-new-place__create-button" type="submit">Создать</button>
+    </form>
+
+</div>
+
+<div class="popup-image">
+    <div class="popup-image__content">
+        <button class="popup-image__close" type="button"></button>
+        <img class="popup-image__img" src="" alt="">
+        <p class="popup-image__caption"></p>
+    </div>
+</div>
+
+<div class="page">
+    <header class="header">
+        <div class="header__logo"></div>
+    </header>
+    <main class="content">
+        <section class="profile">
+            <div class="profile__userinfo">
+                <img alt="аватар" class="profile__avatar" src="images/cousteau.png">
+                <div class="profile__user-description">
+                    <div class="profile__username-edit">
+                        <h1 class="profile__username">Жак-Ив Кусто</h1>
+                        <button class="profile__edit-button" type="button"><img alt="редактировать"
+                                                                                src="images/edit-button.svg"></button>
+                    </div>
+                    <p class="profile__description">Исследователь океана</p>
+                </div>
             </div>
-            <button type="submit" class="popup__save-button">Сохранить</button>
-        </form>
-        <button type="button" class="popup__close"><img src="images/close.svg" alt="закрыть"></button>
+            <button class="profile__add-button" type="button"><img alt="добавить" src="images/add-button.svg"></button>
+        </section>
+
+        <section class="elements">
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+    </footer>
+</div>
+
+<template id="card-element-template">
+    <div class="element">
+        <button class="element__trash" type="button"></button>
+        <img class="element__image">
+        <div class="element__row">
+            <p class="element__caption"></p>
+            <button class="element__like" type="button"></button>
+        </div>
     </div>
-    <div class="page">
-        <header class="header">
-            <div class="header__logo"></div>
-        </header>
-        <main class="content">
-            <section class="profile">
-                <div class="profile__userinfo">
-                    <img class="profile__avatar" src="images/cousteau.png" alt="аватар">
-                    <div class="profile__user-description">
-                        <div class="profile__username-edit">
-                            <h1 class="profile__username">Жак-Ив Кусто</h1>
-                            <button type="button" class="profile__edit-button"><img src="images/edit-button.svg" alt="редактировать"></button>
-                        </div>
-                        <p class="profile__description">Исследователь океана</p>
-                    </div>
-                </div>
-                <button type="button" class="profile__add-button"><img src="images/add-button.svg" alt="добавить"></button>
-            </section>
-            <section class="elements">
-                <div class="element">
-                    <img src="images/karachaevsk.png" alt="Карачаевск">
-                    <div class="element__row">
-                        <p class="element__caption">Карачаевск</p>
-                        <button type="button" class="element__like"><img src="images/like.svg" alt="лайк"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img src="images/elbrus.png" alt="Эльбрус">
-                    <div class="element__row">
-                        <p class="element__caption">Гора Эльбрус</p>
-                        <button type="button" class="element__like"><img src="images/like.svg" alt="лайк"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img src="images/dombay.png" alt="Домбай">
-                    <div class="element__row">
-                        <p class="element__caption">Домбай</p>
-                        <button type="button" class="element__like"><img src="images/like.svg" alt="лайк"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img src="images/elbrus.png" alt="Эльбрус">
-                    <div class="element__row">
-                        <p class="element__caption">Гора Эльбрус</p>
-                        <button type="button" class="element__like"><img src="images/like.svg" alt="лайк"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img src="images/dombay.png" alt="Домбай">
-                    <div class="element__row">
-                        <p class="element__caption">Домбай</p>
-                        <button type="button" class="element__like"><img src="images/like.svg" alt="лайк"></button>
-                    </div>
-                </div>
-                <div class="element">
-                    <img src="images/karachaevsk.png" alt="Карачаево-Черкесия">
-                    <div class="element__row">
-                        <p class="element__caption">Карачаево-Черкесия</p>
-                        <button type="button" class="element__like"><img src="images/like.svg" alt="лайк"></button>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
-        </footer>
-    </div>
-    <script src="scripts/index.js"></script>
+</template>
+
+<script src="scripts/index.js"></script>
 </body>
 
 </html>
