@@ -9,8 +9,8 @@
 </head>
 
 <body>
-<div class="popup">
-    <form class="popup__form" name="edit-form">
+<div class="popup popup_edit-profile">
+    <form class="popup__form popup__form_edit-profile" name="edit-form">
         <button class="popup__close" type="button"></button>
         <h2 class="popup__title">Редактировать профиль</h2>
         <div class="popup__input-list">
@@ -21,28 +21,28 @@
     </form>
 </div>
 
-<div class="popup-new-place">
-    <form class="popup-new-place__form" name="edit-form">
-        <button class="popup-new-place__close" type="button"></button>
-        <h2 class="popup-new-place__title">Новое место</h2>
-        <div class="popup-new-place__input-list">
-            <input class="popup-new-place__input-text popup-new-place__input-text_type_name" name="name"
+<div class="popup popup_new-place">
+    <form class="popup__form popup__form_new-place" name="edit-form">
+        <button class="popup__close popup__close_mobile-position_in-corner" type="button"></button>
+        <h2 class="popup__title">Новое место</h2>
+        <div class="popup__input-list">
+            <input class="popup__input-text popup__input-text_type_name" name="name"
                    placeholder="Название"
                    type="text">
-            <input class="popup-new-place__input-text popup-new-place__input-text_type_link" name="link"
+            <input class="popup__input-text popup__input-text_type_link" name="link"
                    placeholder="Ссылка на картинку"
                    type="text">
         </div>
-        <button class="popup-new-place__create-button" type="submit">Создать</button>
+        <button class="popup__create-button" type="submit">Создать</button>
     </form>
 
 </div>
 
-<div class="popup-image">
-    <div class="popup-image__content">
-        <button class="popup-image__close" type="button"></button>
-        <img class="popup-image__img" src="" alt="">
-        <p class="popup-image__caption"></p>
+<div class="popup popup_image">
+    <div class="popup__content">
+        <button class="popup__close popup__close_mobile-position_in-corner" type="button"></button>
+        <img class="popup__img" src="" alt="">
+        <p class="popup__caption"></p>
     </div>
 </div>
 

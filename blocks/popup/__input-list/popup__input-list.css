@@ -9,7 +9,8 @@
 @media screen and (max-width: 540px) {
 
     .popup__input-list {
-    	margin-top: 75px;
+    	margin-top: 36px;
     	width: calc(100% - 22px*2);
+        gap: 20px;
     }
 }

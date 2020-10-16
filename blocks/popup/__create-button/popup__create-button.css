@@ -1,4 +1,4 @@
-.popup-new-place__create-button {
+.popup__create-button {
     margin: 48px auto 0 auto;
     padding: 0;
     height: 50px;
@@ -16,14 +16,14 @@
     border:0;
 }
 
-.popup-new-place__create-button:hover {
+.popup__create-button:hover {
     opacity: 0.8;
     transition: opacity 0.5s;
 }
 
 @media screen and (max-width: 540px) {
 
-    .popup-new-place__create-button {
+    .popup__create-button {
         font-size: 14px;
         line-height: 17px;
         width: calc(100% - 20px*2);

@@ -1,0 +1,7 @@
+@media screen and (max-width: 540px) {
+
+    .popup__close_mobile-position_in-corner {
+        right: -33px;
+        top: -33px;
+    }
+}

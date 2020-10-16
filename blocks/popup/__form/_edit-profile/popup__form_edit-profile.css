@@ -1,0 +1,7 @@
+@media screen and (max-width: 540px) {
+
+    .popup__form_edit-profile {
+        width: 282px;
+        padding-bottom: 25px;
+    }
+}
