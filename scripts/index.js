@@ -51,7 +51,7 @@ const checkFormInputs = (formElement) => {
     toggleButtonState(inputList, buttonElement);
 
     inputList.forEach((inputElement) => {
-        checkInputValidity(formElement, inputElement);
+        hideInputError(formElement, inputElement);
     });
 }
 
