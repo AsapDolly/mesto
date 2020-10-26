@@ -45,6 +45,32 @@ const initialCards = [
     }
 ];
 
+const checkFormInputs = (formElement) => {
+    const inputList = Array.from(formElement.querySelectorAll('.popup__input'));
+    const buttonElement = formElement.querySelector('.popup__button');
+    toggleButtonState(inputList, buttonElement);
+
+    inputList.forEach((inputElement) => {
+        checkInputValidity(formElement, inputElement);
+    });
+}
+
+const setOverlayEventListeners = () => {
+    const popupOverlay = Array.from(document.querySelectorAll('.popup__overlay'));
+
+    popupOverlay.forEach((popupElement) => {
+        popupElement.addEventListener('click', (evt) => {
+            const thisPopup = popupElement.closest('.popup');
+            closePopup(thisPopup);
+        })
+    });
+};
+
+const closeOpenedPopup = () => {
+    const openedPopup = document.querySelector('.popup_opened');
+    closePopup(openedPopup);
+};
+
 function openPopup(popupType) {
     popupType.classList.add('popup_opened');
 }
@@ -103,15 +129,17 @@ function handleNewPlaceFormSubmit(evt) {
     }
 }
 
-editButton.addEventListener('click', function(){
+editButton.addEventListener('click', function () {
     popupUserName.value = userName.textContent;
     popupDescription.value = description.textContent;
+    checkFormInputs(formElementEditProfile);
     openPopup(popupEditProfile);
 });
 
-addButton.addEventListener('click', function(){
+addButton.addEventListener('click', function () {
     popupNameNewPlace.value = "";
     popupLinkNewPlace.value = "";
+    checkFormInputs(formElementNewPlace);
     openPopup(popupNewPlace);
 });
 
@@ -129,4 +157,10 @@ closePopupEditProfile.addEventListener('click', function () {
 
 formElementEditProfile.addEventListener('submit', handleProfileFormSubmit);
 formElementNewPlace.addEventListener('submit', handleNewPlaceFormSubmit);
+document.addEventListener('keydown', (evt) => {
+    if (evt.key === 'Escape') {
+        closeOpenedPopup();
+    }
+});
 initialCards.forEach(item => addCardElement(item.name, item.link));
+setOverlayEventListeners();
