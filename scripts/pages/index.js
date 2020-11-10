@@ -23,8 +23,10 @@ const userName = document.querySelector('.profile__username');
 const userProfession = document.querySelector('.profile__description');
 const elementsSection = document.querySelector('.elements');
 
-const validation = new FormValidator(validateParams);
-validation.enableValidation();
+const validateEditProfile = new FormValidator(validateParams, formElementEditProfile);
+const validateNewPlace = new FormValidator(validateParams, formElementNewPlace);
+validateEditProfile.enableValidation();
+validateNewPlace.enableValidation();
 
 function addCardElement(data) {
     const card = new Card(data, '#card-element-template');
@@ -33,16 +35,14 @@ function addCardElement(data) {
 }
 
 function handleProfileFormSubmit(evt) {
-    evt.preventDefault();
     userName.textContent = userNameInput.value;
     userProfession.textContent = userProfessionInput.value;
     closePopup(popupEditProfile);
 }
 
 function handleNewPlaceFormSubmit(evt) {
-    evt.preventDefault();
     if (placeNameInput.value && placeLinkInput.value) {
-        addCardElement(placeNameInput.value, placeLinkInput.value);
+        addCardElement({name: placeNameInput.value, link: placeLinkInput.value});
         closePopup(popupNewPlace);
     }
 }
@@ -65,16 +65,14 @@ closePopupEditProfile.addEventListener('click', function () {
 editProfileButton.addEventListener('click', function () {
     userNameInput.value = userName.textContent;
     userProfessionInput.value = userProfession.textContent;
-    validation.checkFormInputs(formElementEditProfile);
-    document.addEventListener('keydown', closeByEscapeButton);
+    validateEditProfile.checkFormInputs();
     openPopup(popupEditProfile);
 });
 
 addCardButton.addEventListener('click', function () {
     placeNameInput.value = "";
     placeLinkInput.value = "";
-    validation.checkFormInputs(formElementNewPlace);
-    document.addEventListener('keydown', closeByEscapeButton);
+    validateNewPlace.checkFormInputs();
     openPopup(popupNewPlace);
 });
 

@@ -1,4 +1,7 @@
 import {openPopup, closeByEscapeButton} from '../utils/utils.js';
+const popupImage = document.querySelector('.popup_image');
+const popupImg = popupImage.querySelector('.popup__img');
+const popupCaption = popupImage.querySelector('.popup__caption');
 
 export default class Card {
     constructor(data, cardSelector) {
@@ -29,21 +32,20 @@ export default class Card {
         });
 
         this._element.querySelector('.element__image').addEventListener('click', () => {
-            const popupImage = document.querySelector('.popup_image');
-            popupImage.querySelector('.popup__img').src = this._imgUrlValue;
-            popupImage.querySelector('.popup__img').alt = this._captionValue;
-            popupImage.querySelector('.popup__caption').textContent = this._captionValue;
-            document.addEventListener('keydown', closeByEscapeButton);
-            openPopup(document.querySelector('.popup_image'));
+            popupImg.src = this._imgUrlValue;
+            popupImg.alt = this._captionValue;
+            popupCaption.textContent = this._captionValue;
+            openPopup(popupImage);
         });
     }
 
     generateCard() {
         this._element = this._getTemplate();
+        const elementImage = this._element.querySelector('.element__image');
         this._setEventListeners();
 
-        this._element.querySelector('.element__image').src = this._imgUrlValue;
-        this._element.querySelector('.element__image').alt = this._captionValue;
+        elementImage.src = this._imgUrlValue;
+        elementImage.alt = this._captionValue;
         this._element.querySelector('.element__caption').textContent = this._captionValue;
 
         return this._element;
