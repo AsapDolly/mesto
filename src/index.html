@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="pages/index.css" rel="stylesheet">
     <title>Mesto</title>
 </head>
 
@@ -73,17 +72,17 @@
     <main class="content">
         <section class="profile">
             <div class="profile__userinfo">
-                <img alt="аватар" class="profile__avatar" src="images/cousteau.png">
+                <img alt="аватар" class="profile__avatar" src="<%=require('./images/cousteau.png')%>">
                 <div class="profile__user-description">
                     <div class="profile__username-edit">
                         <h1 class="profile__username">Жак-Ив Кусто</h1>
                         <button class="profile__edit-button" type="button"><img alt="редактировать"
-                                                                                src="images/edit-button.svg"></button>
+                                                                                src="<%=require('./images/edit-button.svg')%>"></button>
                     </div>
                     <p class="profile__description">Исследователь океана</p>
                 </div>
             </div>
-            <button class="profile__add-button" type="button"><img alt="добавить" src="images/add-button.svg"></button>
+            <button class="profile__add-button" type="button"><img alt="добавить" src="<%=require('./images/add-button.svg')%>"></button>
         </section>
 
         <section class="elements">
@@ -106,7 +105,6 @@
     </div>
 </template>
 
-<script type="module" src="scripts/pages/index.js"></script>
 </body>
 
 </html>

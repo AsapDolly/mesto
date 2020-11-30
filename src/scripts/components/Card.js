@@ -1,15 +1,10 @@
-import {openPopup, closeByEscapeButton} from '../utils/utils.js';
-const popupImage = document.querySelector('.popup_image');
-const popupImg = popupImage.querySelector('.popup__img');
-const popupCaption = popupImage.querySelector('.popup__caption');
-
 export default class Card {
-    constructor(data, cardSelector) {
+    constructor({data,handleCardClick}, cardSelector) {
         this._cardSelector = cardSelector;
         this._imgUrlValue = data.link;
         this._captionValue = data.name;
         this._element = null;
-
+        this._handleCardClick = handleCardClick;
     }
 
     _getTemplate() {
@@ -32,10 +27,7 @@ export default class Card {
         });
 
         this._element.querySelector('.element__image').addEventListener('click', () => {
-            popupImg.src = this._imgUrlValue;
-            popupImg.alt = this._captionValue;
-            popupCaption.textContent = this._captionValue;
-            openPopup(popupImage);
+            this._handleCardClick(this._imgUrlValue, this._captionValue);
         });
     }
 
