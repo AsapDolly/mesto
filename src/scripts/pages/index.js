@@ -20,7 +20,7 @@ const validateNewPlace = new FormValidator(validateParams, formElementNewPlace);
 validateEditProfile.enableValidation();
 validateNewPlace.enableValidation();
 
-function renderCards(item, sectionObject){
+function renderCard(item){
     const card = new Card({
         data: item,
         handleCardClick: (imgUrlValue, captionValue) => {
@@ -28,7 +28,7 @@ function renderCards(item, sectionObject){
         }
     }, '#card-element-template');
     const cardElement = card.generateCard();
-    sectionObject.addItem(cardElement);
+    cardList.addItem(cardElement);
 };
 
 const popupImageClass = new PopupWithImage('.popup_image');
@@ -46,11 +46,7 @@ popupEditProfileClass.setEventListeners();
 const popupNewPlaceClass = new PopupWithForm({
     popupSelector: '.popup_new-place',
     handleFormSubmit: (data) => {
-        const addedCard = new Section({
-            items: [data],
-            renderer: (item) => renderCards(item, addedCard)
-        }, '.elements');
-        addedCard.renderItems();
+        renderCard(data);
         popupNewPlaceClass.close();
     }
 });
@@ -73,6 +69,6 @@ addCardButton.addEventListener('click', function () {
 
 const cardList = new Section({
     items: initialCards,
-    renderer: (item) => renderCards(item, cardList)
+    renderer: (item) => renderCard(item)
 }, '.elements');
 cardList.renderItems();

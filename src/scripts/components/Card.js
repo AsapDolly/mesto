@@ -11,19 +11,21 @@ export default class Card {
         const cardElement = document
             .querySelector(this._cardSelector)
             .content
+            .querySelector('.element')
             .cloneNode(true);
 
         return cardElement;
     }
 
     _setEventListeners() {
-        this._element.querySelector('.element__like').addEventListener('click', (evt) => {
-            evt.target.classList.toggle('element__like_active');
+        const elementLike = this._element.querySelector('.element__like');
+        elementLike.addEventListener('click', (evt) => {
+            elementLike.classList.toggle('element__like_active');
         });
 
-        this._element.querySelector('.element__trash').addEventListener('click', function (evt) {
-            const cardToDelete = evt.target.closest('.element');
-            cardToDelete.remove();
+        this._element.querySelector('.element__trash').addEventListener('click', (evt) => {
+            this._element.remove();
+            this._element = null;
         });
 
         this._element.querySelector('.element__image').addEventListener('click', () => {
