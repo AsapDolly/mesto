@@ -1,5 +1,5 @@
-.popup__save-button {
-    margin: 48px auto 0 auto;
+.popup__avatar-edit-button {
+    margin: 36px auto 0 auto;
     padding: 0;
     height: 50px;
     width: calc(100% - 36px*2);
@@ -16,18 +16,18 @@
     border:0;
 }
 
-.popup__save-button:hover {
+.popup__avatar-edit-button:hover {
     opacity: 0.8;
     transition: opacity 0.5s;
 }
 
 @media screen and (max-width: 540px) {
 
-    .popup__save-button {
+    .popup__avatar-edit-button {
         font-size: 14px;
         line-height: 17px;
-        width: calc(100% - 22px*2);
-        height: 46px;
-        margin-top: 45px;
+        width: calc(100% - 20px*2);
+        height: 40px;
+        margin-top: 36px;
     }
 }

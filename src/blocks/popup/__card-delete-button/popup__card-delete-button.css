@@ -1,0 +1,22 @@
+.popup__card-delete-button{
+    width: calc(100% - 36px*2);
+    height: 50px;
+    background: #000000;
+    border-radius: 2px;
+    border: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 36px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.popup__card-delete-button:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}

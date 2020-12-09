@@ -65,6 +65,34 @@
     <div class="popup__overlay"></div>
 </div>
 
+<div class="popup popup_card-delete">
+    <form class="popup__form popup__form_card-delete" name="card-delete-form" novalidate>
+        <button class="popup__close popup__close_card-delete popup__close_mobile-position_in-corner"
+                type="button"></button>
+        <h2 class="popup__title">Вы уверены?</h2>
+        <button class="popup__card-delete-button popup__button" type="submit">Да</button>
+    </form>
+    <div class="popup__overlay"></div>
+</div>
+
+<div class="popup popup_avatar-edit">
+    <form class="popup__form popup__form_avatar-edit" name="avatar-edit-form" novalidate>
+        <button class="popup__close popup__close_avatar-edit popup__close_mobile-position_in-corner"
+                type="button"></button>
+        <h2 class="popup__title">Обновить аватар</h2>
+        <div class="popup__input-list">
+            <label class="popup__field">
+                <input class="popup__input popup__input-text_type_link" id="avatar-url-input" name="link"
+                       placeholder="Ссылка на изображение"
+                       type="url" required>
+                <span class='popup__error' id='avatar-url-input-error'></span>
+            </label>
+        </div>
+        <button class="popup__avatar-edit-button popup__button" type="submit">Сохранить</button>
+    </form>
+    <div class="popup__overlay"></div>
+</div>
+
 <div class="page">
     <header class="header">
         <div class="header__logo"></div>
@@ -72,15 +100,17 @@
     <main class="content">
         <section class="profile">
             <div class="profile__userinfo">
-                <img alt="аватар" class="profile__avatar" src="<%=require('./images/cousteau.png')%>">
+                <div class="profile__avatar-overlay"></div>
+                <img alt="аватар" class="profile__avatar" src="">
+
                 <div class="profile__user-description">
                     <div class="profile__username-edit">
-                        <h1 class="profile__username">Жак-Ив Кусто</h1>
+                        <h1 class="profile__username"></h1>
                         <button class="profile__edit-button" type="button"><img alt="редактировать"
                                                                                 src="<%=require('./images/edit-button.svg')%>">
                         </button>
                     </div>
-                    <p class="profile__description">Исследователь океана</p>
+                    <p class="profile__description"></p>
                 </div>
             </div>
             <button class="profile__add-button" type="button"><img alt="добавить"
@@ -105,7 +135,10 @@
         </div>
         <div class="element__row">
             <p class="element__caption"></p>
-            <button class="element__like" type="button"></button>
+            <div class="element__like-group">
+                <button class="element__like" type="button"></button>
+                <p class="element__like-count"></p>
+            </div>
         </div>
     </div>
 </template>
