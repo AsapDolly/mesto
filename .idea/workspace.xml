@@ -20,25 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35d1088a-6a7e-4ef0-bf04-e4f304aeeff7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/blocks/element/__like-count/element__like-count.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/element/__like-group/element__like-group.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup/__avatar-edit-button/popup__avatar-edit-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup/__card-delete-button/popup__card-delete-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup/__card-delete-title/popup__card-delete-title.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup/__form/_card-delete/popup__form_card-delete.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar-overlay/profile__avatar-overlay.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts/components/Api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts/components/PopupWithSubmit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/utils/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/utils/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/element/__row/element__row.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/__row/element__row.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/element/element.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/element/element.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/popup/__save-button/popup__save-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popup/__save-button/popup__save-button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/popup/__title/popup__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/popup/__title/popup__title.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/components/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Card.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/PopupWithForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/components/PopupWithImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/PopupWithImage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/components/PopupWithSubmit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/PopupWithSubmit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/components/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Section.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/components/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/UserInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/pages/index.js" afterDir="false" />
@@ -52,8 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -169,6 +158,7 @@
       <workItem from="1607310746706" duration="11543000" />
       <workItem from="1607388177803" duration="26865000" />
       <workItem from="1607477139672" duration="1309000" />
+      <workItem from="1607595582735" duration="11253000" />
     </task>
     <servers />
   </component>

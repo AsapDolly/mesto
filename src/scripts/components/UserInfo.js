@@ -1,38 +1,25 @@
 export default class UserInfo {
-    constructor({userNameSelector, userDescriptionSelector, userPictureSelector}, api) {
+    constructor({userNameSelector, userDescriptionSelector, userPictureSelector}) {
         this._userName = document.querySelector(userNameSelector);
         this._userDescription = document.querySelector(userDescriptionSelector);
         this._userAvatar = document.querySelector(userPictureSelector);
-        this._api = api;
         this._userId = null;
     }
 
-    getUserId(){
-        return this._userId;
+    setUserInfo({username = this._userName.textContent, description = this._userDescription.textContent,
+                    userId = this._userId, avatarUrl = this._userAvatar.src}) {
+        username ? this._userName.textContent = username : console.log('Не заполнен пользователь');
+        description ? this._userDescription.textContent = description : console.log('Не заполнено описание пользователя');
+        userId ? this._userId = userId : console.log('Не заполнен ид пользователя');
+        avatarUrl ? this._userAvatar.src = avatarUrl : console.log('Не указана ссылка на аватар');
     }
 
-    getInfoFromServer() {
-        this._api.getUserInformation()
-            .then((res) => {
-                this._userId = res._id;
-                this.setUserInfo({username: res.name, description: res.about});
-                this.setNewAvatar(res.avatar);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
-    }
-
-    getUserInfoFromPage() {
-        return {username: this._userName.textContent, description: this._userDescription.textContent};
-    }
-
-    setUserInfo({username, description}) {
-        this._userName.textContent = username;
-        this._userDescription.textContent = description;
-    }
-
-    setNewAvatar(url) {
-        this._userAvatar.src = url;
+    getUserInfo(){
+       return {
+           username: this._userName.textContent,
+           description: this._userDescription.textContent,
+           userId: this._userId,
+           avatarUrl: this._userAvatar.src
+       };
     }
 }

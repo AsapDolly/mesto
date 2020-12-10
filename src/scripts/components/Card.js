@@ -54,6 +54,10 @@ export default class Card {
 
     }
 
+    removeCard(){
+        this._element.remove();
+    }
+
     generateCard() {
         this._element = this._getTemplate();
         this.updateLikeState(this._likes);

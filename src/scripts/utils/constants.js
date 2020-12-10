@@ -1,6 +1,3 @@
-export const popupImage = document.querySelector('.popup_image');
-export const popupImg = popupImage.querySelector('.popup__img');
-export const popupCaption = popupImage.querySelector('.popup__caption');
 export const popupEditProfile = document.querySelector('.popup_edit-profile');
 export const userNameInput = popupEditProfile.querySelector('.popup__input-text_type_username');
 export const userProfessionInput = popupEditProfile.querySelector('.popup__input-text_type_description');
