@@ -20,18 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35d1088a-6a7e-4ef0-bf04-e4f304aeeff7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scripts/utils/selectors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts/utils/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/PopupWithForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/PopupWithImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/PopupWithImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/PopupWithSubmit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/PopupWithSubmit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/components/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Section.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/components/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/UserInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/utils/constants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +151,7 @@
       <workItem from="1607388177803" duration="26865000" />
       <workItem from="1607477139672" duration="1309000" />
       <workItem from="1607595582735" duration="11253000" />
+      <workItem from="1607690783808" duration="952000" />
     </task>
     <servers />
   </component>

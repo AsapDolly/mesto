@@ -92,8 +92,8 @@ const popupAvatarEditClass = new PopupWithForm({
                 console.log(err);
             })
             .finally(() => {
-                popupAvatarEditClass.close();
                 renderLoading(evt, buttonTitle);
+                popupAvatarEditClass.close();
             });
     },
     popupSelector: popupAvatarEditSelector
@@ -116,8 +116,8 @@ const popupEditProfileClass = new PopupWithForm({
                 console.log(err);
             })
             .finally(() => {
-                popupEditProfileClass.close();
                 renderLoading(evt, buttonTitle);
+                popupEditProfileClass.close();
             });
     }
 });
@@ -136,8 +136,8 @@ const popupNewPlaceClass = new PopupWithForm({
                 console.log(err);
             })
             .finally(() => {
-                popupNewPlaceClass.close();
                 renderLoading(evt, buttonTitle);
+                popupNewPlaceClass.close();
             });
     }
 });
@@ -164,24 +164,7 @@ avatarEditButton.addEventListener('click', () => {
 });
 
 const cardList = new Section({
-    renderer: () => {
-        api.getInitialCards()
-            .then((res) => {
-                res.sort((a, b) => {
-                    if (a.createdAt > b.createdAt) {
-                        return 1;
-                    }
-                    if (a.createdAt < b.createdAt) {
-                        return -1;
-                    }
-                    return 0;
-                });
-                res.forEach(item => renderCard(item));
-            })
-            .catch((err) => {
-                console.log(err);
-            });
-    }
+    renderer: renderCard
 }, elementsSelector);
 
 api.getUserInformation()
@@ -194,7 +177,22 @@ api.getUserInformation()
         });
     })
     .then(() => {
-        cardList.renderItems();
+        api.getInitialCards()
+            .then((result) => {
+                result.sort((a, b) => {
+                    if (a.createdAt > b.createdAt) {
+                        return 1;
+                    }
+                    if (a.createdAt < b.createdAt) {
+                        return -1;
+                    }
+                    return 0;
+                });
+                cardList.renderItems(result);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
     })
     .catch((err) => {
         console.log(err);

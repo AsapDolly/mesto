@@ -6,8 +6,7 @@ export default class UserInfo {
         this._userId = null;
     }
 
-    setUserInfo({username = this._userName.textContent, description = this._userDescription.textContent,
-                    userId = this._userId, avatarUrl = this._userAvatar.src}) {
+    setUserInfo({username, description, userId, avatarUrl}) {
         username ? this._userName.textContent = username : console.log('Не заполнен пользователь');
         description ? this._userDescription.textContent = description : console.log('Не заполнено описание пользователя');
         userId ? this._userId = userId : console.log('Не заполнен ид пользователя');
