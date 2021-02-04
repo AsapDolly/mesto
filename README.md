@@ -43,3 +43,20 @@ https://asapdolly.github.io/mesto/
 - javascipt
 - webpack
 - promise, fetch
+
+В компиляции исходного кода потребуется установить зависимости через npm:
+- babel/core: 7.12.9
+- babel/preset-env: 7.12.7
+- autoprefixer: 10.0.4
+- babel-loader: 8.2.2
+- clean-webpack-plugin: 3.0.0
+- css-loader: 5.0.1
+- cssnano: 4.1.10
+- gh-pages: 3.1.0
+- html-webpack-plugin: 4.5.0
+- mini-css-extract-plugin: 1.3.1
+- postcss-loader: 4.1.0
+- webpack: 5.9.0
+- webpack-cli: 4.2.0
+- webpack-dev-server: 3.11.0
+- core-js: 3.8.0
